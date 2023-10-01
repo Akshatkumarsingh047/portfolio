@@ -38,7 +38,10 @@ export default function Footer() {
             </div>
             <div className="col-span-12 lg:col-span-3">
               <div className="flex justify-center mt-5 lg:mt-0">
-                <a className="font-sans  cursor-pointer px-10 py-5 bg-[#223740] hover:bg-[#223740] rounded-xl text-white font-medium text-lg">
+                <a
+                target="blank"
+                href="https://www.udemy.com/course/the-ultimate-nextjs13-portfolio-website-responsive/?referralCode=910E0431A13760E0695A"
+                 className="font-sans  cursor-pointer px-10 py-5 bg-[#223740] hover:bg-[#223740] rounded-xl text-white font-medium text-lg">
                   Sign Up Now
                 </a>
               </div>
@@ -147,7 +150,7 @@ export default function Footer() {
               <p className="font-medium text-white font-sans">Services</p>
               <ul className="mt-6 space-y-4 text-sm">
                 {service.map((item) => (
-                  <li>
+                  <li key={item}>
                     <a className="text-[#7b858b] font-sans hover:opacity-75 cursor-pointer">
                       {item}
                     </a>
@@ -159,7 +162,7 @@ export default function Footer() {
               <p className="font-medium text-white font-sans">Company Policy</p>
               <ul className="mt-6 space-y-4 text-sm">
                 {company.map((item) => (
-                  <li>
+                  <li key={item}>
                     <a className="text-[#7b858b] font-sans hover:opacity-75 cursor-pointer">
                       {item}
                     </a>
@@ -171,7 +174,7 @@ export default function Footer() {
               <p className="font-medium text-white font-sans">Helpful Links</p>
               <ul className="mt-6 space-y-4 text-sm">
                 {helping.map((item) => (
-                  <li>
+                  <li key={item}>
                     <a className="text-[#7b858b] font-sans hover:opacity-75 cursor-pointer">
                       {item}
                     </a>
@@ -183,7 +186,7 @@ export default function Footer() {
               <p className="font-medium text-white font-sans">Legal Policies</p>
               <ul className="mt-6 space-y-4 text-sm">
                 {legal.map((item) => (
-                  <li>
+                  <li key={item}>
                     <a className="text-[#7b858b] font-sans hover:opacity-75 cursor-pointer">
                       {item}
                     </a>

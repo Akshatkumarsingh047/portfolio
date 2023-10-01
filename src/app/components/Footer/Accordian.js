@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
-export default function accordian({ title, content }) {
+export default function Accordian({ title, content }) {
   const [isOpen, setIsoOpen] = useState(false);
 
   const toggleAccordina = () => {
@@ -44,7 +44,7 @@ export default function accordian({ title, content }) {
         {(ref) => (
           <div ref={ref} className="p-4 bg-[#232323]">
             {content.map((item) => (
-              <p className="py-1 text-gray-400 font-sans">{item}</p>
+              <p key={item} className="py-1 text-gray-400 font-sans">{item}</p>
             ))}
           </div>
         )}

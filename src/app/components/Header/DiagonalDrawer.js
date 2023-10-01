@@ -16,7 +16,7 @@ export default function DiagonalDrawer({
         <div
           className={`z-50 ${
             pathname === "/" ? "top-[0px]" : "top-[0px]"
-          } cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-red-500 top-0 flex justify-center items-center rounded-br-3xl `}
+          } cursor-pointer fixed w-14 h-14 lg:w-24 lg:h-24 bg-[#48AFDE] top-0 flex justify-center items-center rounded-br-3xl `}
         >
           <div
             onClick={() => setIsOpen(false)}
@@ -69,6 +69,7 @@ export default function DiagonalDrawer({
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
                   <div className="inline-block relative">
                     <a
+                      target="blank"
                       href="/#home"
                       onClick={() => {
                         setSelectedIndex1(0);
@@ -89,6 +90,7 @@ export default function DiagonalDrawer({
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
                   <div className="inline-block relative">
                     <a
+                      target="blank"
                       href="/#portfolio"
                       onClick={() => {
                         setSelectedIndex1(1);
@@ -109,6 +111,7 @@ export default function DiagonalDrawer({
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
                   <div className="inline-block relative">
                     <a
+                      target="blank"
                       href="/#about-me-component"
                       onClick={() => {
                         setSelectedIndex1(2);
@@ -129,6 +132,7 @@ export default function DiagonalDrawer({
                 <li className="group my-4 xl:my-4 2xl:my-6 relative">
                   <div className="inline-block relative">
                     <a
+                      target="blank"
                       href="/page/contactme"
                       onClick={() => {
                         setSelectedIndex1(3);
@@ -153,6 +157,7 @@ export default function DiagonalDrawer({
               </h3>
               <div className="flex flex-row sm:flex-col  lg:flex-row">
                 <a
+                  target="blank"
                   href="https://twitter.com/Ehiedu_baba"
                   className="text-gray-300 hover:text-white transition-colors duration-3000"
                 >
@@ -170,6 +175,7 @@ export default function DiagonalDrawer({
                   </svg>
                 </a>
                 <a
+                  target="blank"
                   href="git"
                   className="text-gray-300 hover:text-white transition-colors duration-3000"
                 >
@@ -187,6 +193,7 @@ export default function DiagonalDrawer({
                   </svg>
                 </a>
                 <a
+                  target="blank"
                   href=""
                   className="text-gray-300 hover:text-white transition-colors duration-3000"
                 >
@@ -204,6 +211,7 @@ export default function DiagonalDrawer({
                   </svg>
                 </a>
                 <a
+                  target="blank"
                   href="linkedin"
                   className="text-gray-300 hover:text-white transition-colors duration-3000"
                 >
@@ -221,6 +229,7 @@ export default function DiagonalDrawer({
                   </svg>
                 </a>
                 <a
+                  target="blank"
                   href="https://www.instagram.com/instructor_ehizeex/"
                   className="text-gray-300 hover:text-white transition-colors duration-3000"
                 >

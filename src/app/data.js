@@ -102,7 +102,7 @@ export const DataArray = [
     name: "Ultimate ReactJs portfolio",
     des: "I have made this project in 2022  to show thousands of students all over the world  how to make Reactjs portfolio.",
     des1: "This project was made using, Ractjs, Nextjs, Expressjs, Nodejs, Rxjs Bootsrap and many more!",
-    images: ["/reactportfolio.png", "/2.webp", "/3.webp", "/4.webp"],
+    images: ["/reactportfolio.png"],
   },
   {
     title: "Management Consulting Company Web Design",
@@ -134,6 +134,6 @@ export const DataArray = [
     des: "We did  this project for Yum Foods Located in USA.",
     des1: "This website's graphic design is fantastic. Animated sliders are painstakingly built and created in WordPress with Revolution Slider. All of the product photos are photo manipulations created in Adobe Photoshop.",
 
-    images: ["/yumfood.jpg", "/yumfood2.png"],
+    images: ["/onboarding.jpg","/yumfood.jpg", "/deliveryguy.png"],
   },
 ];

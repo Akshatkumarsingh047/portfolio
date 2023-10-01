@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Hind } from "next/font/google";
 import { AboutData } from "@/app/data";
+import Image from "next/image";
 
 import './aboutme.css'
 
@@ -49,7 +50,7 @@ export default function AboutMe() {
     <React.Fragment>
       <div
         id="about-me-component"
-        className="bg-[#E0F3FD] pt-[250px] mt-10  pb-[100px] lg:pb-[600px] relative lg:h-[800px]"
+        className="bg-[#E0F3FD] pt-[250px] mt-4  pb-[100px] lg:pb-[600px] relative lg:h-[800px]"
       >
         <div className="container m-auto">
           <h1 className="text-[240px] w-[80%] overflow-hidden absolute lg:left-40 md:left-30 top-[-50px]  text-[#EAF7FC]">
@@ -108,7 +109,7 @@ export default function AboutMe() {
           <div className=" hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
             <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
               {AboutData.map((item, index) => (
-                <a
+                <a key={index}
                   onClick={() => handleCardClick(item, index)}
                   style={{ boxShadow: "#48AFDE -5px  10px 20px 0px" }}
                   className={`relative cursor-pointer transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center  items-center ${
@@ -118,7 +119,10 @@ export default function AboutMe() {
                   }`}
                 >
                   <div className="w-16 h-16 sm:w-10 sm:h-10  lg:w-16 lg:h-16">
-                    <img src={item.img} />
+                    <Image 
+                    height={100}
+                    width={100}
+                    src={item.img} alt="internet issues"/>
                   </div>
                   <h4
                     className={`text-center text-sm lg:text-xl  font-recoletaBold transition-colors duration-500 group-hover:text-white text-[#47626D] mt-3 ${
@@ -161,7 +165,7 @@ export default function AboutMe() {
                   class={`${hind.className} font-[300] list-disc text-[#47626D] ml-8 lg:ml-10 text-base lg:text-lg transition duration-500 transform  opacity-100 undefined undefined`}
                 >
                   {mapData?.array?.map((obj) => (
-                    <li class="mb-2">{obj}</li>
+                    <li key={obj} class="mb-2">{obj}</li>
                   ))}
                 </ul>
               </section>

@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 import { Hind } from "next/font/google";
 
@@ -130,9 +131,11 @@ export default function Testimonial() {
             >
               <div className=" flex">
                 <div className="min-w-[100px]">
-                  <img
+                  <Image
+                  height={25}
+                  width={25}
                     className="mb-3 md:mb-0  h-20 w-20 rounded-full"
-                    src="daisy.jpg"
+                    src="/daisy.jpg"
                     alt="/"
                   />
                 </div>
@@ -172,9 +175,11 @@ export default function Testimonial() {
             >
               <div className=" flex">
                 <div className="min-w-[100px]">
-                  <img
+                  <Image
+                  height={25}
+                  width={25}
                     className="mb-3 md:mb-0  h-20 w-20 rounded-full"
-                    src="john.jpg"
+                    src="/john.jpg"
                     alt="/"
                   />
                 </div>
@@ -209,9 +214,11 @@ export default function Testimonial() {
             >
               <div className=" flex">
                 <div className="min-w-[100px]">
-                  <img
+                  <Image
+                  height={25}
+                  width={25}
                     className="mb-3 md:mb-0  h-20 w-20 rounded-full"
-                    src="adijirat.png"
+                    src="/adijirat.png"
                     alt="/"
                   />
                 </div>
@@ -249,9 +256,11 @@ export default function Testimonial() {
             >
               <div className=" flex">
                 <div className="min-w-[100px]">
-                  <img
+                  <Image
+                  height={25}
+                  width={25}
                     className="mb-3 md:mb-0  h-20 w-20 rounded-full"
-                    src="amaka.png"
+                    src="/amaka.png"
                     alt="/"
                   />
                 </div>
@@ -285,9 +294,11 @@ export default function Testimonial() {
             >
               <div className=" flex">
                 <div className="min-w-[100px]">
-                  <img
+                  <Image
+                  height={25}
+                  width={25}
                     className="mb-3 md:mb-0  h-20 w-20 rounded-full"
-                    src="papo.png"
+                    src="/papo.png"
                     alt="/"
                   />
                 </div>

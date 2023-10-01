@@ -4,6 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Hind } from "next/font/google";
 import Header from "../Header/Header";
+import Image from "next/image";
 
 
 const hind = Hind({
@@ -146,14 +147,20 @@ const HomeComponent = () => {
             </div>
             {/*implemeting the profile image*/}
             <div className="md:col-span-7 col-span-12 md:pt-[130px] pt-[50px] md:bg-transparent bg-[#d9eef7]">
-              <div className="m-auto container">
-                <img
+              <div className="m-auto container"
+               style={{width: '100%', height: '100%'}}
+              >
+                <Image
                   className=""
                   alt="Full-Stack Developer"
                   src="/ehizeex.png"
                   decoding="async"
                   data-nimg="intrinsic"
-                ></img>
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: '100%', height: 'auto' }} 
+                />
               </div>
             </div>
           </div>
@@ -166,15 +173,36 @@ const HomeComponent = () => {
                   boxShadow: "#48AFDE -10px 25px 50px 10px",
                 }}
               >
-                <div className="lg:py-10  md:py-6 cursor-all-scroll">
+                <div className="lg:py-10 py-10 md:py-6 cursor-all-scroll">
                   <Slider {...settings}>
-                    <img src="/mongodb.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
-                    <img src="/expressjs.png" alt="" className=" h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
-                    <img src="/reactjs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer  " />
-                    <img src="/nextjs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
-                    <img src="/docker.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
-                    <img src="/expressjs.png" alt="" className=" h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
-                    <img src="/nodejs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
+                    <Image
+                     height={8}
+                     width={50}
+                     src="/mongodb.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
+                    <Image
+                     height={8}
+                     width={50}
+                     src="/expressjs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
+                    <Image
+                     height={8}
+                     width={50}
+                     src="/reactjs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer  " />
+                    <Image
+                     height={8}
+                     width={50}
+                     src="/nextjs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
+                    <Image
+                     height={8}
+                     width={50}
+                     src="/docker.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
+                    <Image
+                     height={8}
+                     width={50}
+                     src="/expressjs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
+                    <Image
+                     height={8}
+                     width={50}
+                     src="/nodejs.png" alt="" className="h-12 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 cursor-pointer " />
                   </Slider>
                 </div>
               </div>

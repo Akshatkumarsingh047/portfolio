@@ -47,7 +47,7 @@ export default function Home() {
           >
             Portfolio
           </p>
-          <div className="" style={{ transform: "translate(0px,-250px)" }}>
+          <div className="" style={{ transform: "translate(0px, -290px)" }}>
             <p className="text-[#48AFDE]  md:pl-[80px] px-5 font-extrabold text-5xl">
               Recent Works
             </p>
@@ -64,7 +64,7 @@ export default function Home() {
           </div>
         </div>
         <div 
-        style={{ transform: "translate(0px,-170px)" }}
+        style={{ transform: "translate(0px,-230px)" }}
         >
           <MySlider/>
         </div>

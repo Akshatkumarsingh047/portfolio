@@ -11,16 +11,14 @@ export async function POST(request) {
       service:"gmail",
       
       auth: {
-        user: 'ehizeextech@gmail.com',
-        pass: 'ehojxeggchkfvvpv'
+        user: process.env.EMAIL,
+        pass: process.env.PASSWORD,
       },
-      
-     
     })
     
     const info = await transporter.sendMail({
       from: `"${data.name}"`, 
-      to: 'ehizeextech@gmail.com',
+      to: process.env.EMAIL,
       subject: `Inquiry from Website Contact Form`, 
       text: "", 
       html: `

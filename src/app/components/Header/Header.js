@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Drawer from './DiagonalDrawer'
 import '../Header/DiagonalDrawer.css'
 import Link from "next/link";
+import Image from "next/image";
 
 
 export default function Header() {
@@ -50,7 +51,10 @@ export default function Header() {
             onClick={openDrawer}
             className="z-30 absolute cursor-pointer w-14 h-14 lg:w-24 lg:h-24 bg-[#48AFDE] flex justify-center items-center rounded-br-3xl">
                   <div className="relative w-7 lg:w-10 h-7 lg:h-10 flex justify-center items-center">
-                    <img src="/drawer.png" alt="drawer item" className="w-[150px] h-10"/>
+                    <Image
+                    height={100}
+                    width={100}
+                    src="/drawer.png" alt="drawer item" className="w-[150px] h-10"/>
                   </div>
             </div>
           </div>

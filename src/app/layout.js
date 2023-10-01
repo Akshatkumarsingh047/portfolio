@@ -1,6 +1,6 @@
 "use client";
 import "./globals.css";
-import localFont from "@next/font/local";
+import localFont from "next/font/local";
 import Header from "../app/components/Header/Header";
 import Footer from "./components/Footer/Footer";
 

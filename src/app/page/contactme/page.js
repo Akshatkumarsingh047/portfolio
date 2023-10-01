@@ -13,7 +13,7 @@ const hind = Hind({
   weight: ["300", "400", "500", "600", "700"],
 });
 
-export default function page() {
+export default function Page() {
   const [state, setState] = useState({
     name: "",
     email: "",
