@@ -32,7 +32,7 @@ export default function AboutMe() {
   };
 
   const HandleNext = () => {
-    if (selectedIndex < 3) {
+    if (selectedIndex < 2) {
       handleCardClick(AboutData[selectedIndex + 1], selectedIndex + 1);
     } else {
       handleCardClick(AboutData[0], 0);
