@@ -29,10 +29,10 @@ export default function Home() {
     };
   }, []);
   return (
-    <main className="min-h-screen relative">
+    <main className="relative min-h-screen">
       <HomeComponent />   
       <div
-        className="mt-0 pt-5 -mb-40"
+        className="pt-5 mt-0 -mb-40"
         id="portfolio"
         style={{
           backgroundImage:
@@ -48,14 +48,12 @@ export default function Home() {
             Portfolio
           </p>
           <div className="" style={{ transform: "translate(0px, -290px)" }}>
-            <p className="text-[#48AFDE]  md:pl-[80px] px-5 font-extrabold text-5xl">
-              Recent Works
-            </p>
+            
             <p
               className={`max-w-2xl md:pl-[80px] px-5 font-[300] text-[16px] text-[#47626D] leading-8 mt-5 ${hind.className}`}
             >
               Here are a few of my most recent work. As a web designer and
-              full-stack web developer, I constantly prioritise 100% client
+              full-stack web developer, I constantly prioritize 100% client
               satisfaction. I always enjoy working on my projects, so each one
               is a new adventure for me. While working on each new project, I
               attempt to learn new things. As a result, my paintings are always
@@ -70,12 +68,12 @@ export default function Home() {
         </div>
         </div>
         <AboutMe/>
-      <Testimonial/>
+     
 
       {isScrolled ? (
         <div
           onClick={() => window.scrollTo(0, 0)}
-          className="bg-red-500 p-4 w-fit rounded-xl fixed bottom-8 right-8 cursor-pointer z-50 animate-bounce"
+          className="fixed z-50 p-4 bg-red-500 cursor-pointer w-fit rounded-xl bottom-8 right-8 animate-bounce"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -62,15 +62,16 @@ export default function AboutMe() {
           <h4 className="relative w-full font-[300] md:w-3/4 lg:w-2/3 xl:w-1/2 font-recoleta text-[#223740] text-2xl mb-10 px-5 md:px-24">
             Knack of Building application with frontend and backend operation
           </h4>
-          <section className="relative flex flex-col lg:flex-row px-5 md:px-24">
+          <section className="relative flex flex-col px-5 lg:flex-row md:px-24">
             <p
               className={`w-full lg:w-1/3 text-[#223740] mr-0 mb-5  lg:mr-4 font-[200] ${hind.className}`}
             >
               {" "}
-              My name is Ehizeex. A professional and enthusiastic full-stack
-              developer and designer. However, I am more than just your average
-              programmer or designer. I've been running my own business for the
-              past 7 years and I was continually coming up with new concepts.
+              My name is Akshat Singh. A professional and enthusiastic full-stack
+              developer and designer. I have Bachelor's Degree in COMPUTER SCIENCE AND ENGINEERING (B.tech cse) from 
+              University college of Engineering and Technology Hazaribagh. 
+              However, I am more than just your average
+              programmer or designer.
               I'm very fluid and never stop learning and adapting to new
               situations.
             </p>
@@ -80,7 +81,7 @@ export default function AboutMe() {
               {" "}
               This attitude propelled me on an endless journey to learn a
               variety of skills, including Teaching skill, UI/UX, design,
-              front-end and back-end development, devOps, SEO and optimisations,
+              front-end and back-end development, and optimisations,
               server management, product design, software design, database
               design, and many more...
             </p>
@@ -106,19 +107,19 @@ export default function AboutMe() {
         className="lg:-mt-60"
       >
         <section className="container flex  flex-col m-auto sm:flex-row px-5 md:px-24 mt-[50px sm:mt-0] transform translate-y-[-100px]">
-          <div className=" hidden sm:flex w-full sm:w-1/2 lg:w-7/12">
-            <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6 mr-0 lg:mr-10">
+          <div className="hidden w-full sm:flex sm:w-1/2 lg:w-7/12">
+            <div className="grid gap-6 mr-0 sm:grid-cols-2 xl:grid-cols-3 lg:mr-10">
               {AboutData.map((item, index) => (
                 <a key={index}
                   onClick={() => handleCardClick(item, index)}
                   style={{ boxShadow: "#48AFDE -5px  10px 20px 0px" }}
-                  className={`relative cursor-pointer transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center  items-center ${
+                  className={`relative cursor-pointer max-h-72 transition-all transform duration-300 group rounded-xl center p-6 lg:p-10 flex flex-col justify-center  items-center ${
                     selectedIndex == index
                       ? " -translate-y-2 bg-[#476571]"
                       : "hover:bg-[#476571] hover:shadow-xl hover:-translate-y-2 bg-white"
                   }`}
                 >
-                  <div className="w-16 h-16 sm:w-10 sm:h-10  lg:w-16 lg:h-16">
+                  <div className="w-16 h-16 sm:w-10 sm:h-10 lg:w-16 lg:h-16">
                     <Image 
                     height={100}
                     width={100}
@@ -145,8 +146,8 @@ export default function AboutMe() {
               ))}
             </div>
           </div>
-          <div className="w-full sm:w-1/2 lg:w-5/12 overflow-visible px-0 sm:pl-6 xl:px-10">
-            <div className="bg-white  lg:mt-0 mt-10 rounded-xl p-10 xl:p-12 shadow-accent-color relative">
+          <div className="w-full px-0 overflow-visible sm:w-1/2 lg:w-5/12 sm:pl-6 xl:px-10">
+            <div className="relative p-10 mt-10 bg-white lg:mt-0 rounded-xl xl:p-12 shadow-accent-color">
             <section
                 className={`fade-left overflow-hidden ${
                   isFaded ? "fade-out" : ""        
@@ -176,13 +177,13 @@ export default function AboutMe() {
               >
                 <div className="card-inner">
                   <div className="rounded-2xl cursor-pointer  text-7xl  xl:text-9xl font-recoletaBlack text-white bg-[#47626D]  p-5 xl:p-8 w-28 h-28 xl:w-48 xl:h-48  transform transition duration-500 transform-preserve -rotate-6 transform-preserve">
-                    <span className="text-2xl xl:text-6xl mr-2 sm:mr-3">*</span>
+                    <span className="mr-2 text-2xl xl:text-6xl sm:mr-3">*</span>
                     {mapData.count}
                   </div>
                 </div>
               </div>
 
-              <div className="absolute right-10  -bottom-5 flex">
+              <div className="absolute flex right-10 -bottom-5">
                 <a
                   onClick={HandlePrev}
                   className="w-12 h-12 rounded-xl mr-1 transform transition duration-500  cursor-pointer  hover:-translate-y-1 hover:shadow-lg -rotate flex justify-center items-center bg-[#47626D]"

@@ -84,15 +84,15 @@ export default function Index({ id, data, DataArray }) {
       </div>
 
       <div
-        className="grid  grid-cols-12  relative space-x-0 lg:space-x-8"
+        className="relative grid grid-cols-12 space-x-0 lg:space-x-8"
         style={{
           background:
             "linear-gradient(90deg, rgba(238, 247, 251, 1) 58%, rgba(255, 255, 255, 1) 52%",
         }}
       >
-        <div className="col-span-12  lg:col-span-8 mb-20 scrol lg:px-0 sm:px-20">
+        <div className="col-span-12 mb-20 lg:col-span-8 scrol lg:px-0 sm:px-20">
           {data?.images.map((item) => (
-            <div key={item} className="flex justify-center lg:justify-end  items-center">
+            <div key={item} className="flex items-center justify-center lg:justify-end">
               <Image
                 src={item}
                 alt="portfolio photos"
@@ -103,7 +103,7 @@ export default function Index({ id, data, DataArray }) {
             </div>
           ))}
         </div>
-        <div className="col-span-12  lg:col-span-4 lg:px-0 sm:px-20">
+        <div className="col-span-12 lg:col-span-4 lg:px-0 sm:px-20">
           <div className="mt-10 sm:mt-24 w-full lg:max-w-[300px] lg:px-1  px-3 sticky top-36 pb-14">
             <h1 className="text-3xl  mb-4 text-[#48AFDE]">{data?.name}</h1>
             <p className="text-[14px] font-sans mb-4 text-[#223740]">
@@ -134,14 +134,14 @@ export default function Index({ id, data, DataArray }) {
                 Express
               </h1>
               <h1 className="mr-5 text-[14px]  bg-[#63c5f1] lg:bg-[#EEF7FB]  px-2 py-1  rounded-xl font-sans  mb-4 text-white lg:text-[#6A787D]">
-                UI/US Design
+                UI/UX Design
               </h1>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="relative flex bg-accent-color h-48  text-white">
+      <div className="relative flex h-48 text-white bg-accent-color">
         <div
           className={`group w-1/2 flex items-center justify-center bg-cover  ${hind.className}`}
           style={{ backgroundImage: `url(${DataArray[prev]?.images[0]})` }}

@@ -110,32 +110,7 @@ export default function Page() {
         <div className="px-[20px]">
           <div className="sm:flex gap-[20px] mt-[50px] max-w-[1105px] w-full h-full">
             <div className="flex flex-col flex-1 xl:flex-row gap-[20px]">
-              <div
-                className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
-                style={{ boxShadow: "#48AFDE -1px 1px 10px 0px" }}
-              >
-                <div className="flex items-center gap-[15px]">
-                  <div>
-                    <FaLocationDot size={40} color="#48AFDE" />
-                  </div>
-
-                  <div className="flex flex-col">
-                    <div className="text-[#48AFDE] text-[14px]">
-                      <p>Location...</p>
-                    </div>
-                    <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Visit Us At:</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <p className="text-[#666666]">65th Street, Los Angeles</p>
-                </div>
-                <div>
-                  <p className="text-[#666666]">65th Street, Los Angeles</p>
-                </div>
-              </div>
-
+            
               <div
                 className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
                 style={{ boxShadow: "#48AFDE -1px 1px 10px 0px" }}
@@ -150,15 +125,12 @@ export default function Page() {
                       <p>24*7 Service..</p>
                     </div>
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Call Us On</p>
+                      <p>Call Me On</p>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666]">Tel: +3258723591</p>
-                </div>
-                <div>
-                  <p className="text-[#666666]">Mob: +2372084620</p>
+                  <p className="text-[#666666]">Mob: +91 9693960010</p>
                 </div>
               </div>
             </div>
@@ -178,43 +150,16 @@ export default function Page() {
                       <p>Drop A Line</p>
                     </div>
                     <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Maill Address</p>
+                      <p>Mail Address</p>
                     </div>
                   </div>
                 </div>
                 <div>
-                  <p className="text-[#666666]">ehizextech@gmail.com</p>
+                  <p className="text-[#666666]">akshatkumarsingh047@gmail.com</p>
                 </div>
-                <div>
-                  <p className="text-[#666666]">edubaba@gmail.com</p>
-                </div>
+              
               </div>
-
-              <div
-                className="flex flex-col py-[35px] px-[45px] rounded-lg shadow-lg cursor-pointer transition-all transform duration-300 hover:bg-[#223740] hover:text-white hover:-translate-y-4 bg-white"
-                style={{ boxShadow: "#48AFDE -1px 1px 10px 0px" }}
-              >
-                <div className="flex items-center gap-[15px]">
-                  <div>
-                    <AiOutlineFieldTime size={40} color="#48AFDE" />
-                  </div>
-
-                  <div className="flex flex-col">
-                    <div className="text-[#48AFDE] text-[14px]">
-                      <p>Office Hours..</p>
-                    </div>
-                    <div className="font-semibold text-[20px] tracking-wide">
-                      <p>Opening Time</p>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <p className="text-[#666666]">Mon - Fri : 9am - 6pm</p>
-                </div>
-                <div>
-                  <p className="text-[#666666]">Sunday (Closed)</p>
-                </div>
-              </div>
+             
             </div>
           </div>
         </div>
@@ -316,7 +261,7 @@ export default function Page() {
             </div>
             <div>
               {loading && (
-                <div className="mb-3 text-center ml-5 w-6 h-6 border-t-2 border-blue-600 border-solid animate-spin rounded-full"></div>
+                <div className="w-6 h-6 mb-3 ml-5 text-center border-t-2 border-blue-600 border-solid rounded-full animate-spin"></div>
               )}
               <button className="bg-[#48AFDE] w-full sm:w-auto px-[30px] py-[12px] hover:bg-[#223740] transition-colors duration-300 font-semibold rounded-lg text-white">
                 Send Us Message
