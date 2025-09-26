@@ -9,7 +9,6 @@ export const AboutData = [
       "Information Architecture",
       "Pen and Paper",
       "Adobe Photoshop",
-      "Adobe Illustrator",
       "Figma",
       "Framer",
       "Typography / Spacing / ...",
@@ -65,14 +64,22 @@ export const DataArray = [
     images: ["/interview.png"],
     link: "https://online-interview-app.vercel.app/",
   },
+   {
+    title: "Real Time chat Application ",
+    name: "Chatify",
+    des1: "Built a full-stack real-time chat application featuring custom JWT authentication, secure REST APIs, and MongoDB persistence. Implemented live messaging with Socket.io, image uploads via Cloudinary, and welcome emails through Resend, paired with a responsive React + Tailwind UI and state management using Zustand.",
+    images: ["/chatify.png"],
+    link: "https://chatify-app-rihv8.sevalla.app/login",
+  },
+
   {
     title: "ochii Web Design Agency",
     name: "ochii Web Design Agency",
-    des: "We buit this project as a clone of ochii Web Design Agency.",
-    des1: "",
-
+    des1: "We buit this project as a clone of ochii Web Design Agency.",
+   
     images: ["/ochii.png", ],
     link: "https://ochiii-clone.netlify.app/",
   },
-
+ 
+ 
 ];

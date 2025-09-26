@@ -1,13 +1,16 @@
 'use client';
 import React from "react";
+import dynamic from "next/dynamic";
 import  {useRouter } from 'next/navigation'
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SliderCard({ item, index }) {
+  const Slider = dynamic(() => import("react-slick"), { ssr: false });
   const router =  useRouter()
   return (
     <React.Fragment>
-      <div className="h-[280px] lg:h-[450px] md:h-[400px] sm:h-[200px] lg:w-[650px] md:w-[450px]  sma:w-[300px] w-[300px] relative m-auto">
+      <Link  href={item.link} className="h-[280px] lg:h-[450px] md:h-[400px] sm:h-[200px] lg:w-[650px] md:w-[450px]  sma:w-[300px] w-[300px] relative m-auto">
       
         <div className="relative z-50 w-full h-full py-4 group cursor-all-scroll md:py-4 ">
           <Image
@@ -19,8 +22,8 @@ export default function SliderCard({ item, index }) {
             sizes="100vw"
             style={{ width: '100%', height: '80%' }} 
           />
-          <div 
-          onClick={()=> router.push(item.link)}
+          <Link 
+          href={item.link}
           className="absolute bottom-[100px] lg:bottom-44 md:bottom-32 sm:bottom-[270px]  left-6 rounded-lg transition  duration-300 opacity-0 group-hover:opacity-100 bg-[#47626D] cursor-pointer flex items-center justify-center shadow-accent-color  hover:shadow-xl  hover:bg-[#47626D] w-10  h-10 md:w-12  md:h-12 lg:w-20 lg:h-20" 
           style={{ boxShadow: "#48AFDE -10px 10px 20px 10px" }}
           >
@@ -44,7 +47,7 @@ export default function SliderCard({ item, index }) {
                 d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
               ></path>
             </svg>
-          </div>
+          </Link>
         </div>
         <div
           className="absolute top-14 sm:left-12 rounded-lg bg-white h-[200px] lg:h-[350px] md:h-[300px] w-full"
@@ -56,7 +59,7 @@ export default function SliderCard({ item, index }) {
             </p>
           </div>
         </div>
-      </div>
+      </Link>
     </React.Fragment>
   );
 }

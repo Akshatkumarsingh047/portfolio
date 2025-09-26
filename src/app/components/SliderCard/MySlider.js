@@ -7,7 +7,6 @@ import SliderCard from "./SliderCard";
 import { DataArray } from "@/app/data";
 
 export default function MySlider() {
-
   var settings = {
     infinite: true,
     slidesToShow: 1,
@@ -17,133 +16,61 @@ export default function MySlider() {
     centerMode: true,
     centerPadding: "400px",
     dots: true,
+    autoplay: true,             // 👈 enable autoplay
+    autoplaySpeed: 1000,        // 👈 slide every 3 seconds
+    pauseOnHover: true,         // 👈 pause when hovering
     responsive: [
       {
         breakpoint: 1700,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "400px",
-        },
+        settings: { centerPadding: "400px" },
       },
       {
         breakpoint: 1550,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "350px",
-        },
+        settings: { centerPadding: "350px" },
       },
       {
         breakpoint: 1450,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "300px",
-        },
+        settings: { centerPadding: "300px" },
       },
       {
         breakpoint: 1400,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "250px",
-        },
+        settings: { centerPadding: "250px" },
       },
       {
         breakpoint: 1250,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "200px",
-        },
+        settings: { centerPadding: "200px" },
       },
       {
         breakpoint: 1150,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "170px",
-        },
+        settings: { centerPadding: "170px" },
       },
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "230px",
-        },
+        settings: { centerPadding: "230px" },
       },
       {
         breakpoint: 980,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "200px",
-        },
+        settings: { centerPadding: "200px" },
       },
       {
         breakpoint: 920,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "170px",
-        },
+        settings: { centerPadding: "170px" },
       },
       {
         breakpoint: 860,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "130px",
-        },
+        settings: { centerPadding: "130px" },
       },
       {
         breakpoint: 780,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "100px",
-        },
+        settings: { centerPadding: "100px" },
       },
       {
         breakpoint: 765,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-          centerPadding: "170px",
-        },
+        settings: { centerPadding: "170px" },
       },
       {
         breakpoint: 640,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
           dots: false,
           centerMode: false,
           centerPadding: "0",
@@ -153,12 +80,12 @@ export default function MySlider() {
   };
 
   return (
-    <Slider {...settings} >
+    <Slider {...settings}>
       {DataArray.map((item, index) => (
         <div key={index} className="my-slider">
           <SliderCard item={item} index={index} />
         </div>
       ))}
-</Slider>
+    </Slider>
   );
 }
